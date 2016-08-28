@@ -4,11 +4,12 @@ image_resource:
   source: {repository: quay.io/desource/alpine, tag: build}
 
 run:
-  path: src/build.sh
+  path: ci/build.sh
   
 inputs:
-- name: libslz-src
-  path: src
+- name: libslz-ci
+  path: ci
 
 outputs:
-- name: libslz-build
+- name: libslz
+  path: out
