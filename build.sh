@@ -3,11 +3,11 @@
 # Download and build libslz
 set -euo pipefail
 
-declare -r version=1.0.0
-declare -r sha256=4696da81bc4ac5ec5bbc36a62c168bdca4d35f4fbe63da76b2d9cf54be857a45
+version=1.0.0
+sha256=4696da81bc4ac5ec5bbc36a62c168bdca4d35f4fbe63da76b2d9cf54be857a45
 
-declare -r build=${PWD}/libslz
-declare -r out=${PWD}/libslz-build
+build=${PWD}/libslz
+out=${PWD}/libslz-build
 
 mkdir -p ${build}
 
